@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package qc.hj.proyecto1.controller;
+package qc.ag.proyecto1.controller;
 
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.SessionFactory;

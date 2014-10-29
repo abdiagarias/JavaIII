@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Aplicacion web con MVC basica</h1>
-        <form action="horoscopo.xls" method="post" >
+        <form action="nomina.html" method="post" >
             <p> escribe tu nombre</p>
             <input type="text" name="nombre"/><br>
             <select name="signo">
