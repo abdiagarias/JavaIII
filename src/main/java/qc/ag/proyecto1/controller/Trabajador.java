@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-package qc.hj.proyecto1.controller;
+package qc.ag.proyecto1.controller;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -106,7 +101,7 @@ public class Trabajador implements Serializable {
 
     @Override
     public String toString() {
-        return "qc.hj.proyecto1.controller.Trabajador[ idTrabajador=" + idTrabajador + " ]";
+        return "qc.ag.proyecto1.controller.Trabajador[ idTrabajador=" + idTrabajador + " ]";
     }
     
 }

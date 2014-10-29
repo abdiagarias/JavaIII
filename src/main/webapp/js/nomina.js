@@ -1,4 +1,7 @@
-$(document).ready(function(){
-    alert('probando jquery');
+
+$(document).ready(function(){             
     
-});
+  });
+                         
+                    
+                       

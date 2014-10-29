@@ -12,6 +12,23 @@
         <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
         <script>
             $(document).ready(function(){
+                
+                $("#actualizar-trabajador").click(function(){
+                    $.ajax({
+                        url:'actualizar-trabajador',
+                        nethod:'put',
+                        data:{
+                            id:'1',
+                            nombre:'raton',
+                            paterno:'vaquero',
+                            materno:'malo'
+                        },
+                        success:function(respuesta){
+                            $("#resultado-actualizacion").html(respuesta);
+                        }
+                        
+        });
+     });
                 $("#guardar-trabajador").click(function(){
                     $.ajax({
                         url:'guardar-trabajador',
@@ -22,7 +39,7 @@
                               materno: $("#materno").val(),
                         },
                         sucess:function(resultado){
-                            $("#resultado-guardar-trabjador").html(resultado);
+                            $("#resultado-guardar-trabajador").html(resultado);
                         }
                     });
                 });
@@ -33,18 +50,23 @@
     <body>
         
         <div class="row">
-            <div class="col-lg-3">
-                <label> Nombre</label>
-                </div>
-                  <div class="col-lg-3">
-               <input type="text" class="form-control" id="nombre"/>
-           </div>
-        </div>
+         <div class="col-lg-3">   
+        <label> Nombre</label>
+        <input type="text" class="form-control" id="nombre"/>
+     
         <label> A.paterno</label>
         <input type="text" class="form-control" id="paterno"/>
+        
         <label> A.materno</label>
         <input type="text" class="form-control" id="materno"/>
+        
         <a id="guardar-trabajador" class="btn btn-default">Guardar Trabajador</a>
         <div id="resultado-guardar-trabajador"></div>
+         </div>
+            
+        <div class="col-lg-3">
+        <a id="actualizar-trabajador" class ="btn-warning">Actualizar trabajador</a>
+        <div id="resultado-actualizacion"></div>
+        </div>
     </body>
 </html>

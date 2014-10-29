@@ -2,20 +2,20 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <display-name>maven-mvc</display-name>
     <servlet>
-        <servlet-name>ServletBuscarHoroscopo</servlet-name>
-        <servlet-class>qc.hj.proyecto1.controller.ServletBuscarHoroscopo</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>ServletGuardarUsuario</servlet-name>
         <servlet-class>ServletGuardarUsuario</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletBuscarHoroscopo</servlet-name>
-        <url-pattern>/horoscopo.xls</url-pattern>
-    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletActualizarTrabajador</servlet-name>
+        <servlet-class>ServletActualizarTrabajador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletGuardarUsuario</servlet-name>
         <url-pattern>/ServletGuardarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletActualizarTrabajador</servlet-name>
+        <url-pattern>/ServletActualizarTrabajador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
